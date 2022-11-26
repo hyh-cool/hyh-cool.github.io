@@ -1,0 +1,1 @@
+const e={key:"v-b170b43e",path:"/LeetCode/",title:"\u524D\u8A00",lang:"zh-CN",frontmatter:{title:"\u524D\u8A00",date:"2022-11-23T00:00:00.000Z",author:"hyh"},excerpt:"",headers:[],readingTime:{minutes:1,words:43},filePathRelative:"LeetCode/README.md"};export{e as data};
