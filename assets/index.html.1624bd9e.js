@@ -1,1 +1,0 @@
-const t={key:"v-2d0a3132",path:"/OS/",title:"\u524D\u8A00",lang:"zh-CN",frontmatter:{title:"\u524D\u8A00",date:"2022-11-26T00:00:00.000Z",author:"hyh"},excerpt:"",headers:[],readingTime:{minutes:1,words:13},filePathRelative:"OS/README.md"};export{t as data};

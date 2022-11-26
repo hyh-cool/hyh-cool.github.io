@@ -1,1 +1,0 @@
-const t={key:"v-270a49ba",path:"/NetWork/",title:"\u524D\u8A00",lang:"zh-CN",frontmatter:{title:"\u524D\u8A00",date:"2022-11-26T00:00:00.000Z",author:"hyh"},excerpt:"",headers:[],readingTime:{minutes:1,words:22},filePathRelative:"NetWork/README.md"};export{t as data};
