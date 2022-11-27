@@ -46,7 +46,6 @@ module.exports = {
     docsDir: "blog",
     docsBranch: "master",
     navbarTitle: "何小胖的个人小站",
-    lastUpdated: '上次更新',
 	locales: {
       "/": {
         searchText: "搜索"

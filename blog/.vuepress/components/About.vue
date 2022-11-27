@@ -40,7 +40,7 @@ import Common from "vuepress-theme-gungnir/lib/client/components/Common.vue";
 
 const LINKS = {
   github: "https://github.com/hyh-cool",
-  email: "hyh_cool@163.com",
+  email: "mailto: hyh_cool@163.com",
 };
 
 const ICONS = {
