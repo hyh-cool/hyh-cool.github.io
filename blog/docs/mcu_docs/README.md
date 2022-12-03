@@ -44,4 +44,12 @@ links:
         url: https://hyh1370039199-1313349927.cos.ap-chengdu.myqcloud.com/docs/simHT32F52342_52_UserManualv130.pdf
         img: /img/links/microchip.jpg
         desc: 用户参考手册
+      - sitename: CMS32L051
+        url: https://hyh1370039199-1313349927.cos.ap-chengdu.myqcloud.com/docs/CMS32L051%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.90.pdf
+        img: /img/links/microchip.jpg
+        desc: 数据手册
+      - sitename: CMS32L051
+        url: https://hyh1370039199-1313349927.cos.ap-chengdu.myqcloud.com/docs/CMS32L051%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V1.2.pdf
+        img: /img/links/microchip.jpg
+        desc: 用户参考手册
 ---

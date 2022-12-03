@@ -1,7 +1,7 @@
 const isProd = process.env.NODE_ENV === "production";
 module.exports = {
 
-  title: "何小胖的个人小站",
+  title: "hyh's Blog",
   description: "一名从事嵌入式开发的搬砖人.",
   
   head: [
@@ -45,7 +45,7 @@ module.exports = {
     //repo: "hyh-cool/hyh-cool.github.io",
     docsDir: "blog",
     docsBranch: "master",
-    navbarTitle: "何小胖的个人小站",
+    navbarTitle: "",
 	locales: {
       "/": {
         searchText: "搜索"
@@ -56,7 +56,7 @@ module.exports = {
     //hitokoto: "https://v1.hitokoto.cn?c=i", // enable hitokoto (一言) or not?
     // personal information
     personalInfo: {
-      name: "何小胖的个人小站",
+      name: "记录技术,分享生活",
       avatar: "/img/avatar.jpg",
       description: "今日任务: Coding(1/1).",
       sns: {
