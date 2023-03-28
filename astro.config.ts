@@ -6,7 +6,7 @@ import { remarkPlugins, rehypePlugins } from "./plugins";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://zxh.io/",
+  site: "https://hyh.cool/",
   integrations: [solid(), unocss(), sitemap()],
   markdown: {
     remarkPlugins,
