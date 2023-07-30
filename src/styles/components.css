@@ -9,9 +9,9 @@ header .blink {
   animation: blinker 1s none infinite;
 }
 
-header nav span.active {
+/* header nav span.active {
   @apply underline decoration-wavy decoration underline-offset-4;
-}
+} */
 
 @keyframes blinker {
   50% {
