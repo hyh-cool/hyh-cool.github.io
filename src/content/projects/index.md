@@ -1,5 +1,4 @@
 ---
-layout: ../layouts/Projects.astro
 projects:
   Website:
     - name: Personal Blog

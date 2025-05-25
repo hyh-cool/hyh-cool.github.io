@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import { SITE } from "@config";
 import { getPostDate } from "@utils";
 
-export async function get() {
+export async function GET() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
   return rss({
@@ -11,7 +11,7 @@ export async function get() {
     description: SITE.desc,
     site: SITE.website,
     items: posts.map((item) => ({
-      link: `posts/${item.slug}`,
+      link: `posts/${item.id}`,
       title: item.data.title,
       pubDate: new Date(getPostDate(item.id))
     }))

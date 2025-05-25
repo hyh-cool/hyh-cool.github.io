@@ -16,9 +16,9 @@ export const THEME = {
 
 export const GISCUS = {
   repo: "hyh-cool/comments-Giscus",
-  repoId: "R_kgDOIe47Jw",
+  repoId: "R_kgDOOwLrtw",
   category: "Announcements",
-  categoryId: "DIC_kwDOIe47J84CSstm",
+  categoryId: "DIC_kwDOOwLrt84CqkTa",
   light: "light",
   dark: `${SITE.website}/css/giscus-dark.css`
 };

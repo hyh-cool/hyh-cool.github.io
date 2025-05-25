@@ -1,16 +1,16 @@
-import { onMount, createEffect, createSignal, type Component } from "solid-js";
-import { useScroll, useDark } from "solidjs-use";
+import { onMount, createEffect, createSignal, Show, type Component } from "solid-js";
+import { useScroll } from "solidjs-use";
+import ToggleDark from "@components/ToggleDark";
 import ToggleToc from "@components/ToggleToc";
 
 export const Navbar: Component<{
   activePage?: string;
   hasToc?: boolean;
 }> = (props) => {
-  const [isDark, setDark] = useDark();
   const [isFixed, setIsFixed] = createSignal(false);
   const [isVisible, setIsVisible] = createSignal(false);
 
-  let navbar: HTMLElement | undefined = undefined;
+  const [navbar, setNavbar] = createSignal<HTMLDivElement>();
 
   onMount(() => {
     const { y, directions } = useScroll(document);
@@ -26,25 +26,25 @@ export const Navbar: Component<{
       } else if (directions.bottom) {
         // scrolling down
         setIsVisible(false);
-        if (navbar && y() > navbar.offsetHeight) setIsFixed(true);
+        if (y() > (navbar()?.offsetHeight ?? 0)) setIsFixed(true);
       }
     });
   });
 
   return (
     <header
-      ref={navbar}
-      class={`z-30 w-full h-14 hstack justify-between bg-c font-ui px-4 md:px-5 ${
-        isFixed() && "fixed -top-14 left-0 transition duration-300 border-b border-c"
-      } ${isVisible() && "translate-y-full shadow-nav"} ${
+      ref={setNavbar}
+      class={`z-30 w-full h-14 hstack justify-between bg-bg font-ui px-4 md:px-5 ${
+        isFixed() && "fixed -top-14 left-0 transition duration-300 border-b"
+      } ${isVisible() && "translate-y-full shadow"} ${
         !isFixed() && !isVisible() && "absolute top-0 left-0"
       }`}
     >
-      <a class="font-bold" un-text="c-light hover:c-dark" href="/">
-        <span text="lg">Home</span>
+      <a class="font-bold text-fg-light hover:text-fg-dark" href="/">
+        <span text-lg>Home</span>
       </a>
 
-      <nav hstack space-x-4>
+      <nav hstack gap-x-4>
         <a class="font-bold" nav-item href="/projects" title="Projects">
           <div i-ph:rocket-launch-duotone class="md:hidden" />
           <span class={`lt-md:hidden ${props.activePage === "projects" && "active"}`}>
@@ -70,11 +70,11 @@ export const Navbar: Component<{
           <span i-uil:search />
         </a>
 
-        <button nav-item title="Toggle dark" onClick={() => setDark(!isDark())}>
-          <div i="carbon-sun dark:carbon-moon" />
-        </button>
+        <ToggleDark />
 
-        {props.hasToc && <ToggleToc />}
+        <Show when={props.hasToc}>
+          <ToggleToc />
+        </Show>
       </nav>
     </header>
   );
