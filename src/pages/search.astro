@@ -9,7 +9,7 @@ const searchList = posts.map(({ id, body, data }) => ({
   id,
   title: data.title,
   date: formatDate(getPostDate(id), 2),
-  excerpt: (body ?? "").substring(0, 100).replace("## toc", "")
+  //excerpt: (body ?? "").substring(0, 100).replace("## toc", "")
 }));
 ---
 

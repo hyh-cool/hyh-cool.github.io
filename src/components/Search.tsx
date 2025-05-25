@@ -6,7 +6,7 @@ export type SearchItem = {
   id: string;
   title: string;
   date: string;
-  excerpt: string;
+  //excerpt: string;
 };
 
 export const Search: Component<{ searchList: SearchItem[] }> = (props) => {
